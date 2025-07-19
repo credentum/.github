@@ -39,7 +39,9 @@ No plugins. No opaque APIs. Agents can use HTTP, CLI, or memory SDKs.
 
 
 🔍 Why Credentum?
-Most systems forget, overwrite, or fake certainty. Credentum is built to:
+Most systems forget, overwrite, or fake certainty. 
+
+Credentum is built to:
 - Remember contradiction
 - Refuse dishonest synthesis
 - Signal when it’s tired
