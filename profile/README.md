@@ -24,17 +24,19 @@ No plugins. No opaque APIs. Agents can use HTTP, CLI, or memory SDKs.
 ```
 
 📦 Projects
-Name	Description	Status
-context-store	Lightweight agent memory: vector, graph, and KV store	🟢 Active
-scarline	Append-only scar lineage log + replay engine	🔲 In Planning
-credentum-core	Shared schemas, MCP tooling, symbolic reflex logic	🟡 Drafting
-credentum-ui	Public witness dashboard for lineage & replay	🔲 In Planning
+  | Name | Description | Status |
+  |------|-------------|--------|
+  | context-store | Lightweight agent memory: vector, graph, and KV store | 🟢 Active |
+  | scarline | Append-only scar lineage log + replay engine | 🔲 In Planning |
+  | credentum-core | Shared schemas, MCP tooling, symbolic reflex logic | 🟡 Drafting |
+  | credentum-ui | Public witness dashboard for lineage & replay | 🔲 In Planning |
 
 🛠️ Use With
 🧩 LangChain
 🧩 CrewAI
 🧩 n8n
 🧩 Any agent that can call a webhook
+
 
 🔍 Why Credentum?
 Most systems forget, overwrite, or fake certainty. Credentum is built to:
