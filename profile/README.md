@@ -2,7 +2,7 @@
 
 **Truth, remembered — especially when it wounds.**
 
-Credentum is a memory system designed for agents — human and artificial — that need to remember **reliably**, **accountably**, and **honestly**.
+Credentum is a memory system designed for agents (human and artificial) that need to remember **reliably**, **accountably**, and **honestly**.
 
 We build tools that help agents:
 - Store and retrieve structured memory (context, facts, decisions)
