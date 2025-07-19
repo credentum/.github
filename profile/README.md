@@ -15,7 +15,7 @@ We build tools that help agents:
 
 All Credentum projects use **MCP-style protocols** — simple, inspectable JSON interfaces for tools like:
 
-```json
+```
 POST /store_context
 GET /retrieve_context
 GET /scar_lineage
