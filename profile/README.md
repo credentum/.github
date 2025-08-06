@@ -40,8 +40,6 @@ No plugins. No opaque APIs. Agents can use HTTP, CLI, or memory SDKs.
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [veris-memory](https://github.com/credentum/veris-memory) | ◎ Flagship memory system with Agent-First Schema Protocol | 🟢 **Active** |
-| [agent-context-template](https://github.com/credentum/agent-context-template) | GitHub Actions template for integrating Claude AI workflows | 🟢 **Active** |
-| context-store | Legacy name for Veris Memory development | 🔄 **Migrated** |
 | scarline | Append-only scar lineage log + replay engine | 🔲 In Planning |
 | credentum-core | Shared schemas, MCP tooling, symbolic reflex logic | 🟡 Drafting |
 | credentum-ui | Public witness dashboard for lineage & replay | 🔲 In Planning |
