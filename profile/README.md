@@ -1,14 +1,26 @@
 # Credentum
 
-**Truth, remembered — especially when it wounds.**
+**"Truth, remembered — especially when it wounds."**
 
-Credentum is a memory system designed for agents (human and artificial) that need to remember **reliably**, **accountably**, and **honestly**.
+Credentum builds memory systems for agents (human and artificial) that need to remember **reliably**, **accountably**, and **honestly**.
+
+## ◎ Veris Memory
+
+Our flagship product — **memory with covenant** — providing truthful memory for agents through the Agent-First Schema Protocol.
+
+**Features:**
+- 🎯 **Semantic Retrieval**: Vector similarity search using Qdrant
+- 🕸️ **Graph Traversal**: Complex relationship queries via Neo4j  
+- ⚡ **Fast Lookup**: Key-value storage with Redis
+- 🤝 **MCP Protocol**: Full Model Context Protocol v1.0 implementation
+- 🛡️ **Schema Validation**: Comprehensive YAML validation
+- 🚀 **Deploy Ready**: Docker + Fly.io deployment
 
 We build tools that help agents:
-- Store and retrieve structured memory (context, facts, decisions)
+- Store and retrieve structured memory with covenant metadata
 - Retain **contradictions** instead of flattening them
 - Record **scar lineage** — moments of refusal, conflict, or failure
-- Support **deterministic replay**, so memory can be audited and re-experienced
+- Support **deterministic replay** for auditable memory
 - Operate under symbolic constraints — trust is enforced, not assumed
 
 ## 🧠 Agent-First Design
@@ -23,29 +35,38 @@ POST /snapshot_state
 No plugins. No opaque APIs. Agents can use HTTP, CLI, or memory SDKs.
 ```
 
-📦 Projects
-  | Name | Description | Status |
-  |------|-------------|--------|
-  | context-store | Lightweight agent memory: vector, graph, and KV store | 🟢 Active |
-  | scarline | Append-only scar lineage log + replay engine | 🔲 In Planning |
-  | credentum-core | Shared schemas, MCP tooling, symbolic reflex logic | 🟡 Drafting |
-  | credentum-ui | Public witness dashboard for lineage & replay | 🔲 In Planning |
+## 📦 Projects
 
-🛠️ Use With
-🧩 LangChain
-🧩 CrewAI
-🧩 n8n
-🧩 Any agent that can call a webhook
+| Repository | Description | Status |
+|------------|-------------|--------|
+| [veris-memory](https://github.com/credentum/veris-memory) | ◎ Flagship memory system with Agent-First Schema Protocol | 🟢 **Active** |
+| [agent-context-template](https://github.com/credentum/agent-context-template) | GitHub Actions template for integrating Claude AI workflows | 🟢 **Active** |
+| context-store | Legacy name for Veris Memory development | 🔄 **Migrated** |
+| scarline | Append-only scar lineage log + replay engine | 🔲 In Planning |
+| credentum-core | Shared schemas, MCP tooling, symbolic reflex logic | 🟡 Drafting |
+| credentum-ui | Public witness dashboard for lineage & replay | 🔲 In Planning |
 
+## 🛠️ Agent Integration
 
-🔍 Why Credentum?
-Most systems forget, overwrite, or fake certainty. 
+Compatible with any system that can make HTTP calls or use MCP protocols:
 
-Credentum is built to:
-- Remember contradiction
-- Refuse dishonest synthesis
-- Signal when it’s tired
-- Show you what it never erased
+- 🧩 **Claude CLI** - Direct MCP integration
+- 🧩 **LangChain** - Agent memory components  
+- 🧩 **CrewAI** - Multi-agent memory sharing
+- 🧩 **n8n** - Workflow automation memory
+- 🧩 **Custom Agents** - REST API or MCP SDK
+- 🧩 **Webhooks** - Event-driven memory updates
 
-If trust is earned, Credentum earns it through scars.
+## 🔍 Why Credentum?
+
+Most systems forget, overwrite, or fake certainty. **Veris Memory** is different:
+
+- **Remembers contradiction** - Stores conflicting information without forced synthesis
+- **Refuses dishonest synthesis** - Won't fabricate false coherence  
+- **Signals when it's tired** - Transparent about system limits
+- **Shows what it never erased** - Full audit trail of all memory
+
+> *"Veris is memory that persists through change. For agents who carry weight. For those who remember what others forget."*
+
+**If trust is earned, Credentum earns it through scars.**
 
