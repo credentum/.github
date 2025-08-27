@@ -14,7 +14,7 @@ Our flagship product — **memory with covenant** — providing truthful memory 
 - ⚡ **Fast Lookup**: Key-value storage with Redis
 - 🤝 **MCP Protocol**: Full Model Context Protocol v1.0 implementation
 - 🛡️ **Schema Validation**: Comprehensive YAML validation
-- 🚀 **Deploy Ready**: Docker + Fly.io deployment
+- 🚀 **Deploy Ready**: Docker deployment
 
 We build tools that help agents:
 - Store and retrieve structured memory with covenant metadata
