@@ -1,70 +1,41 @@
 # Credentum
 
-**"Truth, remembered — especially when it wounds."**
+**Truth, remembered.**
 
-Credentum builds memory systems for agents (human and artificial) that need to remember **reliably**, **accountably**, and **honestly**.
+Your AI agent just approved a $50K purchase order. Can you prove why?
 
-## ◎ Veris Memory
+We build tools that make agent decisions auditable.
 
-Our flagship product — **memory with covenant** — providing truthful memory for agents through the Agent-First Schema Protocol.
+## Shipped
 
-**Features:**
-- 🎯 **Semantic Retrieval**: Vector similarity search using Qdrant
-- 🕸️ **Graph Traversal**: Complex relationship queries via Neo4j  
-- ⚡ **Fast Lookup**: Key-value storage with Redis
-- 🤝 **MCP Protocol**: Full Model Context Protocol v1.0 implementation
-- 🛡️ **Schema Validation**: Comprehensive YAML validation
-- 🚀 **Deploy Ready**: Docker deployment
+### ao-mcp-server
 
-We build tools that help agents:
-- Store and retrieve structured memory with covenant metadata
-- Retain **contradictions** instead of flattening them
-- Record **scar lineage** — moments of refusal, conflict, or failure
-- Support **deterministic replay** for auditable memory
-- Operate under symbolic constraints — trust is enforced, not assumed
+Talk to AO/Arweave from Claude Desktop or Cursor.
 
-## 🧠 Agent-First Design
-
-All Credentum projects use **MCP-style protocols** — simple, inspectable JSON interfaces for tools like:
-
-```
-POST /store_context
-GET /retrieve_context
-GET /scar_lineage
-POST /snapshot_state
-No plugins. No opaque APIs. Agents can use HTTP, CLI, or memory SDKs.
+```bash
+npm install -g ao-mcp-server
 ```
 
-## 📦 Projects
+Query processes. Send messages. Spawn new ones. Execute Lua. Five tools, zero config.
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [veris-memory](https://github.com/credentum/veris-memory) | ◎ Flagship memory system with Agent-First Schema Protocol | 🟢 **Active** |
-| scarline | Append-only scar lineage log + replay engine | 🔲 In Planning |
-| credentum-core | Shared schemas, MCP tooling, symbolic reflex logic | 🟡 Drafting |
-| credentum-ui | Public witness dashboard for lineage & replay | 🔲 In Planning |
+[![npm](https://img.shields.io/npm/v/ao-mcp-server)](https://www.npmjs.com/package/ao-mcp-server)
 
-## 🛠️ Agent Integration
+### Veritas
 
-Compatible with any system that can make HTTP calls or use MCP protocols:
+Witness for AI decisions. Sign in <1ms. Settle to Arweave permanently.
 
-- 🧩 **Claude CLI** - Direct MCP integration
-- 🧩 **LangChain** - Agent memory components  
-- 🧩 **CrewAI** - Multi-agent memory sharing
-- 🧩 **n8n** - Workflow automation memory
-- 🧩 **Custom Agents** - REST API or MCP SDK
-- 🧩 **Webhooks** - Event-driven memory updates
+Your agent made a decision. Veritas proves it.
 
-## 🔍 Why Credentum?
+**Try it:** `curl api.credentum.ai:3100/health`
 
-Most systems forget, overwrite, or fake certainty. **Veris Memory** is different:
+## Projects
 
-- **Remembers contradiction** - Stores conflicting information without forced synthesis
-- **Refuses dishonest synthesis** - Won't fabricate false coherence  
-- **Signals when it's tired** - Transparent about system limits
-- **Shows what it never erased** - Full audit trail of all memory
+| Repo | What | Status |
+|------|------|--------|
+| [ao-mcp-server](https://github.com/credentum/ao-mcp-server) | AO/Arweave MCP tools | Live |
+| [veritas](https://github.com/credentum/veritas) | Decision witness | Production |
+| veris-memory | Agent memory | Building |
 
-> *"Veris is memory that persists through change. For agents who carry weight. For those who remember what others forget."*
+---
 
-**If trust is earned, Credentum earns it through scars.**
-
+*If trust is earned, we earn it through scars.*
