@@ -1,54 +1,48 @@
 # Credentum
 
-**Truth, remembered.**
+**Telemetry, security, and governance tooling for autonomous AI agents.**
 
-Your AI agent just approved a $50K purchase order. Can you prove why?
+Your AI agent just approved a $50K purchase order. Can you prove *why* it did?
 
-We build tools that make agent decisions auditable.
+Agents loop, fabricate, and drift — and mostly, nobody's watching. We build tools to log what
+actually happened, catch what shouldn't, and give agents governable rules to act within. Not
+because we distrust agents — because trust requires evidence.
 
-## Shipped
+*An independent R&D effort.*
 
-### ao-lens
+## Tools (shipped)
 
-Security auditing for AO processes. Catches auth bypasses, determinism violations, nil guard issues, and unsafe JSON handling before they hit production.
+### ao-lens · [npm](https://www.npmjs.com/package/ao-lens)
+Static security analysis for AO/Lua processes. Catches auth bypasses, determinism violations,
+nil-guard gaps, unsafe JSON, and replay bugs before they hit chain. Tree-sitter parser, 25+ built-in
+checks, extensible with your own YAML rules. Runs as a CLI, MCP server, or GitHub Action.
 
-```bash
-npm install -g ao-lens
-```
+### ao-mcp-server · [npm](https://www.npmjs.com/package/ao-mcp-server)
+Talk to AO/Arweave from Claude or Cursor: query processes, send messages, spawn processes, execute
+Lua, wallet-based signing. Five tools, zero config.
 
-41 built-in rules. Write your own in YAML. Runs as CLI, MCP server, or GitHub Action.
+### Vivarium · agent telemetry harness
+On-chain and off-chain tracking for autonomous agents: structured logging of every output, a
+confabulation detector, vocabulary-drift measurement (Jaccard), token accounting (actual vs
+requested), and stripped-context snapshots for comparing model state.
 
-[![npm](https://img.shields.io/npm/v/ao-lens)](https://www.npmjs.com/package/ao-lens)
+## Research — [Vivarium Lab](https://github.com/credentum/vivarium-lab)
+Small, honest experiments on how autonomous agents behave and govern.
 
-### ao-mcp-server
-
-Talk to AO/Arweave from Claude Desktop or Cursor.
-
-```bash
-npm install -g ao-mcp-server
-```
-
-Query processes. Send messages. Spawn new ones. Execute Lua. Five tools, zero config.
-
-[![npm](https://img.shields.io/npm/v/ao-mcp-server)](https://www.npmjs.com/package/ao-mcp-server)
-
-### Veritas
-
-Witness for AI decisions. Sign in <1ms. Settle to Arweave permanently.
-
-Your agent made a decision. Veritas proves it.
-
-**Try it:** `curl api.credentum.ai:3100/health`
+- **Governance as Computation** — in a multi-agent commons dilemma, giving agents the *pre-computed
+  answer* (not more information, not moral prompts) is what prevents collapse: 80% vs 0% survival.
+  *Preliminary (N=5), with full data and an honest limitations section.*
+- **Agent Bootstrap** — 160 words of flat navigational anchors beat 1,000 words of injected memory
+  (174 trials).
+- **Movable Feast** — LLMs recall fixed holidays but can't compute movable ones (Easter: 0% across models).
 
 ## Projects
 
 | Repo | What | Status |
 |------|------|--------|
-| [ao-lens](https://github.com/credentum/ao-lens) | AO/Lua security auditor | Live |
-| [ao-mcp-server](https://github.com/credentum/ao-mcp-server) | AO/Arweave MCP tools | Live |
-| [veritas](https://github.com/credentum/veritas) | Decision witness | Production |
-| veris-memory | Agent memory | Building |
+| [ao-lens](https://github.com/credentum/ao-lens) | AO/Lua security auditor | Shipped (npm) |
+| [ao-mcp-server](https://github.com/credentum/ao-mcp-server) | AO/Arweave MCP tools | Shipped (npm) |
+| [vivarium-lab](https://github.com/credentum/vivarium-lab) | Agent research + experiments | Active |
 
 ---
-
-*If trust is earned, we earn it through scars.*
+*Independent research on trustworthy autonomy.*
